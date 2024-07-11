@@ -1,0 +1,29 @@
+// Importe as interfaces necessárias
+import cellPhone.AparelhoTelefônico;
+import cellPhone.NavegadorInternet;
+import cellPhone.ReprodutorMusical;
+
+public class Iphone extends NavegadorInternet, ReprodutorMusical{
+
+	@Override
+	public void atualizarPagina() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void adicionarNovaAba() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void exibirPagina(String url) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void t
+}
+
+

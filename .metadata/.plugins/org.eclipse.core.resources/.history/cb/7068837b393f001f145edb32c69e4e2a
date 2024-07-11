@@ -1,0 +1,12 @@
+package cellPhone;
+
+public abstract class // Importe as interfaces necessárias
+import cellPhone.AparelhoTelefônico;
+import cellPhone.NavegadorInternet;
+import cellPhone.ReprodutorMusical; {
+	public abstract void atualizarPagina();
+	
+	public abstract void adicionarNovaAba();
+	
+	public abstract void exibirPagina(String url);
+}

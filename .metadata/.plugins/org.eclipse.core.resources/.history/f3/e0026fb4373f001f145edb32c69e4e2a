@@ -1,0 +1,9 @@
+package cellPhone;
+
+public interface AparelhoTelefônico {
+	public void ligar();
+	
+	public void atender();
+	
+	public void inici
+}

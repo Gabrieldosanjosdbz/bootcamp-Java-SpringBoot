@@ -1,0 +1,11 @@
+package interfaces;
+
+public class teste1 implements teste{
+
+	@Override
+	public void darOi() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

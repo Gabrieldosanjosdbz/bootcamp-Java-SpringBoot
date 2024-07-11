@@ -1,0 +1,9 @@
+package cellPhone;
+
+public abstract class NavegadorInternet {
+	public abstract void atualizarPagina();
+	
+	public abstract void adicionarNovaAba();
+	
+	public abstract void exibirPagina
+}

@@ -1,0 +1,6 @@
+package exemplo;
+
+public abstract class teste {
+	static int teste;
+	
+}

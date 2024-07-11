@@ -1,0 +1,15 @@
+package pilares_poo2;
+
+//a classe MSNMessenger é ou representa
+public abstract class ServicoMensagemInstantanea {
+	String nome;
+	String idadeString;
+	
+	ServicoMensagemInstantanea(String nome, String idade) {
+		this.nome = nome;
+		this.idadeString = idade;
+	}
+	
+	public abstract void enviarMensagem();
+	public abstract void receberMensagem();
+}

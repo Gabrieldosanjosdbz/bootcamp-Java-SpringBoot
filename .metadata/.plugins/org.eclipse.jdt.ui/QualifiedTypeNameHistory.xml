@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="enums.EstadoBrasileiro"/>
+    <fullyQualifiedTypeName name="Veiculo"/>
+    <fullyQualifiedTypeName name="pilares_poo2.Telegram"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="pilares_poo2.ServicoMensagemInstantanea"/>
+    <fullyQualifiedTypeName name="pilares_poo2.FacebookMessenger"/>
+    <fullyQualifiedTypeName name="pilares_poo2.MSNMessenger"/>
+    <fullyQualifiedTypeName name="interfaces.teste"/>
+    <fullyQualifiedTypeName name="pilares_poo2.apps.ServicoMensagemInstantanea"/>
+    <fullyQualifiedTypeName name="pilares_poo2.apps.FacebookMessenger"/>
+    <fullyQualifiedTypeName name="pilares_poo2.apps.MSNMessenger"/>
+    <fullyQualifiedTypeName name="cellPhone.AparelhoTelefônico"/>
+    <fullyQualifiedTypeName name="cellPhone.NavegadorInternet"/>
+    <fullyQualifiedTypeName name="cellPhone.ReprodutorMusical"/>
+    <fullyQualifiedTypeName name="exemplo.teste"/>
+    <fullyQualifiedTypeName name="exemplo.teste1"/>
+</qualifiedTypeNameHistroy>

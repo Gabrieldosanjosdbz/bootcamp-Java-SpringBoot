@@ -1,0 +1,14 @@
+package exemplo;
+
+public abstract class Teste {
+	
+	private static int contagem;
+	
+	public Teste(){
+		contagem ++;
+	}
+	
+	public int exibirContagem() {
+		System.out.println("Contagem atual é: " + this.contagem);
+	}
+}

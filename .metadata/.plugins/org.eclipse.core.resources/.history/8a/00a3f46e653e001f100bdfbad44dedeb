@@ -1,0 +1,10 @@
+package pilares_poo2;
+
+//a classe MSNMessenger é ou representa
+public abstract class ServicoMensagemInstantanea {	
+	
+	abstract ServicoMensagem
+	
+	public abstract void enviarMensagem();
+	public abstract void receberMensagem();
+}

@@ -1,0 +1,65 @@
+// Importe as interfaces necessárias
+import cellPhone.AparelhoTelefônico;
+import cellPhone.NavegadorInternet;
+import cellPhone.ReprodutorMusical;
+
+public class Iphone implements AparelhoTelefônico, NavegadorInternet, ReprodutorMusical{
+
+	@Override
+	public void tocar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void pausar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void selecionarMusical(String musica) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void atualizarPagina() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void adicionarNovaAba() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void exibirPagina(String url) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void ligar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void atender() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void iniciarCorreioVoz() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}
+
+

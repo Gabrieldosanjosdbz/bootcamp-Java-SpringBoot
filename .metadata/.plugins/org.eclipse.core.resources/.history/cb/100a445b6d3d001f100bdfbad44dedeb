@@ -1,0 +1,17 @@
+public class Carro {
+	private 
+	public void ligar() {
+		confereCambio();
+		confereCombustivel();
+		System.out.println("CARRO LIGADO!");
+	}
+	
+	//encapsulamento
+	private void confereCombustivel() {
+		System.out.println("CONFERINDO COMBUSTIVEL");
+	}
+	
+	private void confereCambio() {
+		System.out.println("CONFERINDO CAMBIO EM P");
+	}
+}

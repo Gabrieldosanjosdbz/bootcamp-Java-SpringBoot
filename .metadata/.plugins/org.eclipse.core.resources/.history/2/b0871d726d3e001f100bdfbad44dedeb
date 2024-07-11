@@ -1,0 +1,20 @@
+package pilares_poo2;
+import java.util.Scanner;
+
+import pilares_poo2.apps.FacebookMessenger;
+import pilares_poo2.apps.MSNMessenger;
+import pilares_poo2.apps.ServicoMensagemInstantanea;
+import pilares_poo2.apps.Telegram;
+
+import java.util.Locale;
+
+/*
+ * Simulação do uso da classe MSNMessenger
+ */
+public class ComputadorPedrinho {
+	public static void main(String[] args) {
+		
+		
+			
+	}
+}

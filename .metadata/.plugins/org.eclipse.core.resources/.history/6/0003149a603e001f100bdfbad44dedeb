@@ -1,0 +1,6 @@
+package pilares_poo2;
+
+public class FacebookMessenger extends ServicoMensagemInstantanea{
+
+}
+

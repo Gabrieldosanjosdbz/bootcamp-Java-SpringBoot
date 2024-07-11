@@ -1,0 +1,7 @@
+package exemplo;
+
+public class teste2 {
+	teste1 carro = new teste1();
+	
+	carro.
+}

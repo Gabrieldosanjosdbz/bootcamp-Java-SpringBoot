@@ -1,0 +1,12 @@
+package exemplo;
+
+public abstract class Teste {
+	
+	private static int contagem;
+	
+	public Teste(){
+		contagem ++;
+	}
+	
+	public int exibir()
+}

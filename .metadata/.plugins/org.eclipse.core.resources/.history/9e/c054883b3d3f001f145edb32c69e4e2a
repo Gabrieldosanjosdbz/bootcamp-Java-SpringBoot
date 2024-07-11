@@ -1,0 +1,9 @@
+package exemplo;
+
+public abstract class testessss {
+	private static int contagem;
+	
+	testessss(){
+		contagem ++;
+	}
+}

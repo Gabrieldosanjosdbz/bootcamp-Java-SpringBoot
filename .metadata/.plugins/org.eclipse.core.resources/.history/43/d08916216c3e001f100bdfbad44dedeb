@@ -1,0 +1,9 @@
+package interfaces;
+
+public class teste2 {
+	public static void main(String[] args) {
+		teste sdsdsd = new teste1();
+		
+		s
+	}
+}

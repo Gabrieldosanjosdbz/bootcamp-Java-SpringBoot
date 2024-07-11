@@ -1,0 +1,10 @@
+package exemplo;
+
+public class teste1 extends Teste {
+	@Override
+	public void exibirContagem() {
+		// TODO Auto-generated method stub
+		super.exibirContagem();
+	}
+	
+}

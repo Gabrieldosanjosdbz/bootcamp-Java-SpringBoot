@@ -1,0 +1,5 @@
+package cellPhone;
+
+public abstract class NavegadorInternet {
+	
+}

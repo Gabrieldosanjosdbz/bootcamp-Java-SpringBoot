@@ -1,0 +1,11 @@
+// Importe as interfaces necessárias
+import cellPhone.AparelhoTelefônico;
+import cellPhone.NavegadorInternet;
+import cellPhone.ReprodutorMusical;
+
+public class Iphone implements {
+
+	
+}
+
+

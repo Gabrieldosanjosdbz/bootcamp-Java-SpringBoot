@@ -1,0 +1,11 @@
+public class Moto {
+	private String 
+	public String getChassi() {
+		return chassi;
+	}
+	
+	public void setChassi(String chassi) {
+		this.chassi = chassi;
+	}
+		
+}

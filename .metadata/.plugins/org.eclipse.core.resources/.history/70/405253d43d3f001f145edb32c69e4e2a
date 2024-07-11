@@ -1,0 +1,11 @@
+package exemplo;
+
+public class teste1 extends Teste {
+
+	public teste1(int agencia) {
+		super(agencia);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+}
