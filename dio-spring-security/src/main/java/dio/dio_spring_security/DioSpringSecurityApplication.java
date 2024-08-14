@@ -11,9 +11,4 @@ public class DioSpringSecurityApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DioSpringSecurityApplication.class, args);
 	}
-
-	@Bean
-	public CommandLineRunner run() throws Exception{
-		return args -> System.out.println("Olá mundo");
-	}
 }
