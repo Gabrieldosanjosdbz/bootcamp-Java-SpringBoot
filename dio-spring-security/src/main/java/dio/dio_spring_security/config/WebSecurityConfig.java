@@ -1,16 +1,14 @@
-package dio.dio_spring_security;
+package dio.dio_spring_security.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 // Esta classe é uma configuração de segurança para a aplicação Spring Boot
@@ -19,11 +17,19 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 // Habilitando a segurança em métodos específicos da aplicação.
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-
 public class WebSecurityConfig {
+    //buscar informações de autenticação de usuários
+    @Autowired
+    private SecurityDatabaseService securityDatabaseService;
 
-    // Este método configura a autenticação e define os usuários que ficam armazenados em memória
-    @Bean
+    //estrategia global de verificação de usuarios, injetando meu @service como estrategia
+    @Autowired
+    public void globalUserDetails(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(securityDatabaseService).passwordEncoder(NoOpPasswordEncoder.getInstance());
+    }
+
+    // Este método configura a autenticação e define os usuários que ficam armazenados em MEMÓRIA
+    /*@Bean
     public InMemoryUserDetailsManager userDetailsService() {
         // Criação do primeiro usuário na memória com o nome de usuário "user" e a senha "user123"
         UserDetails user = User.withDefaultPasswordEncoder() // Criptografa a senha usando um codificador simples (não recomendado para produção)
@@ -41,20 +47,18 @@ public class WebSecurityConfig {
 
         // Retorna um gerenciador de usuários em memória que contém os usuários criados acima
         return new InMemoryUserDetailsManager(user, user2);
-    }
+    } */
 
-    // 2(mais utilizado e mais recomendado) - Este método você já define diretamente no codigo quem acessa as rotas
-    // sem precisar ir no controller utilizar @PreAuthorize()
+    // Este método você já define diretamente no codigo QUEM acessa as rotas sem precisar ir no controller utilizar @PreAuthorize()
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.formLogin(Customizer.withDefaults())// Habilita a página de login
+        http.httpBasic(Customizer.withDefaults())
             .authorizeHttpRequests((auth) -> auth   //requestMatchers são as rotas, e hasAnyRole são os users que poderão acessa-lo
                     .requestMatchers("/").permitAll()
                     .requestMatchers("/managers").hasAnyRole("MANAGERS")
                     .requestMatchers("/users").hasAnyRole("USERS", "MANAGERS")
                     .anyRequest().authenticated()
-            );
-
+            );//.formLogin(Customizer.withDefaults()) Habilita a página de login;
         return http.build();
     }
 
